@@ -1,0 +1,19 @@
+{
+  "name": "user_list",
+  "version": "1.0.0",
+  "description": "Mini gulp stack for testing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "jfeltkamp",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-sass": "^4.0.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.7",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.3"
+  }
+}

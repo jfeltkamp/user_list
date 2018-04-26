@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Contains user_list.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function user_list_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the user_list module.
+    case 'help.page.user_list':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Creates a favorite list of users.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+

@@ -1,0 +1,5 @@
+listing:
+  version: 1.x
+  css:
+    layout:
+      css/styles.css: {}

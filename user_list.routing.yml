@@ -1,0 +1,16 @@
+
+user_list.original_listing:
+  path: '/user_list/listing'
+  defaults:
+    _controller: '\Drupal\user_list\Controller\UserListController::listing'
+    _title: 'Users'
+  requirements:
+    _permission: 'access content'
+
+user_list.ajax:
+  path: '/user_list/ajax/{uid}'
+  defaults:
+    _controller: '\Drupal\user_list\Controller\UserListController::ajax'
+    _title: 'Users'
+  requirements:
+    _permission: 'access content'

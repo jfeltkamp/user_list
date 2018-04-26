@@ -1,0 +1,4 @@
+services:
+  user_list.listing:
+    class: Drupal\user_list\ListingService
+    arguments: ['@entity_type.manager', '@current_user']

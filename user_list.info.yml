@@ -1,0 +1,7 @@
+name: 'User list'
+type: module
+description: 'Creates a favorite list of users.'
+core: 8.x
+package: 'Monoki'
+dependencies:
+  - user

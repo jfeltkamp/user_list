@@ -1,0 +1,40 @@
+@mixin clearfix() {
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.user-list {
+  margin: 2rem 0;
+
+  &--item {
+    border-bottom: 1px solid #DDD;
+    line-height: 2rem;
+    padding: .3rem .6rem;
+    @include clearfix();
+
+    &:hover {
+      background-color: lighten(#0a6eb4, 60);
+    }
+    
+    & .btn {
+      float: right;
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+  line-height: 2rem;
+  margin: 0 .5rem;
+  padding: 0 .6rem;
+  border-radius: 2px;
+
+  &--primary {
+    color: #FFF;
+    background-color: #0a6eb4;
+  }
+}
