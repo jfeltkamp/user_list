@@ -22,6 +22,9 @@ class UserListController extends ControllerBase {
 
   /**
    * Constructs a new UserListController object.
+   *
+   * @param \Drupal\user_list\ListingService $listing_service
+   *   Dependencies injected.
    */
   public function __construct(ListingService $listing_service) {
     $this->listingService = $listing_service;
@@ -41,6 +44,9 @@ class UserListController extends ControllerBase {
    *
    * @return array
    *   Return render array with list of users.
+   *
+   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+   * @throws \Drupal\Core\Entity\EntityMalformedException
    */
   public function listing() {
     return $this->listingService->getListing();
@@ -54,6 +60,10 @@ class UserListController extends ControllerBase {
    *
    * @return \Drupal\Core\Ajax\AjaxResponse
    *   Return render array with list of users.
+   *
+   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+   * @throws \Drupal\Core\Entity\EntityMalformedException
+   * @throws \Drupal\Core\Entity\EntityStorageException
    */
   public function ajax($uid) {
     $this->listingService->toggleUser($uid);

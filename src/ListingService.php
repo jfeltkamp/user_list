@@ -7,7 +7,6 @@ use Drupal\Core\Session\AccountProxyInterface;
 use Drupal\Core\Link;
 use Drupal\Core\Url;
 use Drupal\user\Entity\User;
-use Drupal\user\UserInterface;
 
 /**
  * Class ListingService.
