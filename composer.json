@@ -1,14 +1,13 @@
 {
-  "name": "drupal/user_list",
+  "name": "jfeltkamp/user_list",
   "type": "drupal-module",
   "description": "Creates a favorite list of users.",
   "keywords": ["Drupal"],
   "license": "GPL-2.0+",
-  "homepage": "https://www.drupal.org/project/user_list",
   "minimum-stability": "dev",
   "support": {
-    "issues": "https://www.drupal.org/project/issues/user_list",
-    "source": "http://cgit.drupalcode.org/user_list"
+    "issues": "https://github.com/jfeltkamp/user_list/issues",
+    "source": "https://github.com/jfeltkamp/user_list"
   },
   "require": { }
 }
