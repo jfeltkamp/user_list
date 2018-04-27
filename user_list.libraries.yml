@@ -3,3 +3,5 @@ listing:
   css:
     layout:
       css/styles.css: {}
+  dependencies:
+     - core/drupal.ajax
